@@ -25,10 +25,6 @@ Built by a BTech student at NIT Hamirpur who is actively transitioning into cybe
 | WS02-Client | Windows 11 | Domain Workstation 2 | 192.168.56.31 |
 | Wazuh-SIEM | Ubuntu Server 22.04 | SIEM / XDR | 192.168.56.100 |
 
-## 🏗️ Lab Architecture
-
-![Lab Architecture Diagram](Architecture/Lab-Diagram.png)
-
 **Active Directory Domain:** `SOC.LAB`
 
 ---
