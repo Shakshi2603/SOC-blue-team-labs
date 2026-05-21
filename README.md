@@ -98,7 +98,7 @@ Built by a BTech student at NIT Hamirpur who is actively transitioning into cybe
 SOC-Incident-Lab/
 ├── README.md
 ├── Architecture/
-│   ├── lab-diagram.png          # Full lab topology diagram
+│   ├── Lab-Diagram.png          # Full lab topology diagram
 │   └── mitre-navigator-layer.json
 ├── ActiveDirectory/
 │   ├── Incident-AD-01-Enumeration/
