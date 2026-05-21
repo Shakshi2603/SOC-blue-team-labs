@@ -18,12 +18,16 @@ Built by a BTech student at NIT Hamirpur who is actively transitioning into cybe
 
 | Machine | OS | Role | IP |
 |---|---|---|---|
-| Kali-Attacker | Kali Linux | Attacker | 192.168.56.5 |
-| Ubuntu-Victim | Ubuntu Server 22.04 | Linux Target | 192.168.56.20 |
+| Kali-Attacker | Kali Linux | Attacker | 192.168.10.5 |
+| Ubuntu-Victim | Ubuntu Server 22.04 | Linux Target | 192.168.10.30 |
 | DC01-Server | Windows Server 2022 | Domain Controller (SOC.LAB) | 192.168.10.10 |
-| WS01-Client | Windows 10 | Domain Workstation 1 | 192.168.56.30 |
-| WS02-Client | Windows 11 | Domain Workstation 2 | 192.168.56.31 |
-| Wazuh-SIEM | Ubuntu Server 22.04 | SIEM / XDR | 192.168.56.100 |
+| WS01-Client | Windows 10 | Domain Workstation 1 | 192.168.10.20 |
+| WS02-Client | Windows 11 | Domain Workstation 2 | 192.168.10.21 |
+| Wazuh-SIEM | Ubuntu Server 22.04 | SIEM / XDR | 192.168.10.100 |
+
+## 🏗️ Lab Architecture
+
+![Lab Architecture Diagram](Architecture/Lab-Diagram.png)
 
 **Active Directory Domain:** `SOC.LAB`
 
