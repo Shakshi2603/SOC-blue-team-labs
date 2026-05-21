@@ -27,7 +27,7 @@ Built by a BTech student at NIT Hamirpur who is actively transitioning into cybe
 
 ## 🏗️ Lab Architecture
 
-![Lab Architecture Diagram](Architecture/lab-diagram.png)
+![Lab Architecture Diagram](Architecture/Lab-Diagram.png)
 
 **Active Directory Domain:** `SOC.LAB`
 
