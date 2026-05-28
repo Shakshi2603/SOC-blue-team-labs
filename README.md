@@ -189,7 +189,7 @@ BTech student (Electrical Engineering) at **NIT Hamirpur**, actively building sk
 - 🔐 TryHackMe SOC Level 1 (in progress)
 - 🎯 Target role: SOC Analyst Internship in India
 
-📬 Connect with me on [LinkedIn] (https://www.linkedin.com/in/shakshi-sona-84a398324/)
+📬 Connect with me on [LinkedIn](https://www.linkedin.com/in/shakshi-sona-84a398324/)
 
 ---
 
