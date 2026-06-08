@@ -2,7 +2,7 @@ title: Automated Web Directory Enumeration Scan
 id: b2f4c0d5-5678-4a5b-8c9d-abcdef100002
 status: experimental
 description: Detects a high volume of web application 404 Not Found status codes originating from a common client endpoint.
-author: Your Name
+author: Shakshi
 date: 2026/05/30
 tags:
     - attack.discovery
