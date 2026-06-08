@@ -1,4 +1,4 @@
-Query 1: Isolate and Parse Raw Failed SSH Passwords
+**Query 1: Isolate and Parse Raw Failed SSH Passwords**
 
 Syslog
 | where Facility == "auth" and SyslogMessage contains "Failed password"
@@ -7,7 +7,7 @@ Syslog
 | project TimeGenerated, Computer, TargetUser, AttackerIP, SyslogMessage
 | order by TimeGenerated desc
 
-Query 2: Detect Active SSH Brute Force Attacks
+**Query 2: Detect Active SSH Brute Force Attacks**
 
 Syslog
 | where Facility == "auth" and SyslogMessage contains "Failed password"
@@ -16,7 +16,7 @@ Syslog
 | where FailureCount > 5
 | order by FailureCount desc
 
-Query 3: Catch Apache 404 Web Directory Scans
+**Query 3: Catch Apache 404 Web Directory Scans**
 
 Syslog
 | where ProcessName == "apache2" and SyslogMessage contains " 404 "
@@ -26,7 +26,7 @@ Syslog
 | where RequestCount > 15
 | order by RequestCount desc
 
-Query 4: Flag High-Risk "Brute Force to Success" Transitions
+**Query 4: Flag High-Risk "Brute Force to Success" Transitions**
 
 let AttackerBlacklist = Syslog
 | where Facility == "auth" and SyslogMessage contains "Failed password"
@@ -41,7 +41,7 @@ Syslog
 | where SuccessfulIP in (AttackerBlacklist)
 | project TimeGenerated, Computer, TargetUser, SuccessfulIP, AlertContext = "CRITICAL: Account compromised via successful Brute Force!"
 
-Query 5: Hunt for Off-Hours Administrative Activities
+**Query 5: Hunt for Off-Hours Administrative Activities**
 
 Syslog
 | where Facility == "auth" and SyslogMessage contains "Accepted"
