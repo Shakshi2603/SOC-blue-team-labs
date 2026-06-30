@@ -31,5 +31,20 @@
     <description>SOAR Orchestration: Active Response successfully reversed/flushed firewall drop rule on endpoint.</description>
     <group>active_response,containment</group>
   </rule>
+<!-- Escalating Kerberoasting Events -->
+  <rule id="100010" level="10">
+    <if_sid>60100, 60101, 60103, 60106</if_sid>
+    <field name="win.system.eventID">^4769$</field>
+    <field name="win.eventdata.ticketEncryptionType">^0x17$|^0x18$|^23$</field>
+    <description>Security Alert: Potential Kerberoasting activity detected via weak encryption ticket request (RC4-HMAC).</description>
+    <group>credential_access,mitre_t1558.003</group>
+  </rule>
 
+  <!-- Fallback Debug Rule (To verify ANY 4769 logs are being parsed) -->
+  <rule id="100011" level="5">
+    <if_sid>60100, 60101, 60103, 60106</if_sid>
+    <field name="win.system.eventID">^4769$</field>
+    <description>Security Event: Generic Kerberos Ticket Request (Event ID 4769) parsed by SIEM.</description>
+    <group>windows_security</group>
+  </rule>
 </group>
