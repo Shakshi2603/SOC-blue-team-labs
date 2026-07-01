@@ -49,8 +49,8 @@ Built by a BTech student at NIT Hamirpur who is actively transitioning into cybe
 
 | # | Investigation | MITRE Technique | Status |
 |---|---|---|---|
-| AD-01 | [AD Enumeration — BloodHound & LDAP Recon](./ActiveDirectory/Incident-AD-01-Enumeration/) | T1069.002, T1087.002 | 🔄 In Progress |
-| AD-02 | [Kerberoasting Attack + Detection](./ActiveDirectory/Incident-AD-02-Kerberoasting/) | T1558.003 | 🔄 In Progress |
+| AD-01 | [AD Enumeration — BloodHound & LDAP Recon](./ActiveDirectory/Incident-AD-01-Enumeration/) | T1069.002, T1087.002 | ✅ Completed |
+| AD-02 | [Kerberoasting Attack + Detection](./ActiveDirectory/Incident-AD-02-Kerberoasting/) | T1558.003 | ✅ Completed |
 | AD-03 | [AS-REP Roasting](./ActiveDirectory/Incident-AD-03-ASREPRoasting/) | T1558.004 | ⏳ Upcoming |
 | AD-04 | [Pass-the-Hash + Lateral Movement](./ActiveDirectory/Incident-AD-04-PassTheHash/) | T1550.002 | ⏳ Upcoming |
 | AD-KC | [Full AD Kill Chain Report](./ActiveDirectory/Incident-AD-KillChain/) | Multiple | ⏳ Upcoming |
